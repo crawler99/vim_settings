@@ -40,6 +40,9 @@ syntax on
 set hlsearch
 set ruler
 
+" Paste
+set paste
+
 " Editing 
 set expandtab
 set shiftwidth=4
