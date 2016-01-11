@@ -32,9 +32,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Syntax
-syntax enable
-syntax on
+" Color scheme (contain syntax)
+colorscheme xoria256
 
 " Navigation
 set hlsearch
