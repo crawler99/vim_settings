@@ -24,6 +24,16 @@ if [ ! -d $COLOR_SCHEMES ]; then
 fi
 
 ####################################################
+echo "Setting up the syntax spec for the first use ..."
+SYNTAX_SPECS=$VIM_HOME/syntax
+SYNTAX_SPECS_REPO=$HOME/github/vim_settings/syntax
+
+if [ ! -d $SYNTAX_SPECS ]; then
+    echo "linking color schemes to $SYNTAX_SPECS ..."
+    ln -s $SYNTAX_SPECS_REPO $SYNTAX_SPECS
+fi
+
+####################################################
 rc=$?
 exit $rc
 
