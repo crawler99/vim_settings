@@ -36,12 +36,12 @@ filetype plugin indent on    " required
 "colorscheme lizard256
 syntax on
 
+" Paste
+set paste
+
 " Navigation
 set hlsearch
 set ruler
-
-" Paste
-set paste
 
 " Editing 
 set expandtab
