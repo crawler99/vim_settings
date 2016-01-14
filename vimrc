@@ -40,7 +40,7 @@ syntax on
 set paste
 
 " Navigation
-set hlsearch
+hi Search cterm=NONE ctermfg=black ctermbg=yellow
 set ruler
 
 " Editing 
