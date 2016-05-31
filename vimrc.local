@@ -5,3 +5,6 @@ let g:indent_guides_auto_colors = 0
 
 " Disable the indent guides
 set nolist
+
+" Disable the spell checking
+set nospell
