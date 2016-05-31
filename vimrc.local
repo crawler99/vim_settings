@@ -1,10 +1,10 @@
 colorscheme 256-jungle
 
-" Disable the indent highlight blocks
 let g:indent_guides_auto_colors = 0
 
-" Disable the indent guides
 set nolist
 
-" Disable the spell checking
 set nospell
+
+let NERDTreeQuitOnOpen = 0
+let g:nerdtree_tabs_open_on_console_startup = 1
