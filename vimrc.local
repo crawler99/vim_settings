@@ -12,3 +12,6 @@ set nospell
 " NERDTree configuration
 let NERDTreeQuitOnOpen = 0
 let g:nerdtree_tabs_open_on_console_startup = 1
+
+" Disable particular view options cached in ~/.vimviews/
+set viewoptions-=options
