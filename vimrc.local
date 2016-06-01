@@ -1,4 +1,6 @@
-colorscheme 256-jungle
+"colorscheme 256-jungle
+"colorscheme wombat256mod
+colorscheme desertink
 
 " Disable the hilighting of indent blocks
 let g:indent_guides_auto_colors = 0
