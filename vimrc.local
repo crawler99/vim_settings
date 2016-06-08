@@ -31,3 +31,21 @@ nmap bf :bfirst<CR>
 
 " Disable mouse selection
 set mouse=""
+
+" Cscope config
+if has("cscope")
+    set cscopetag
+    set csto=0
+    "if filereadable("cscope.out")
+    "    cs add cscope.out
+    "endif
+    set csverb
+    nmap ss :cs find s =expand("")<CR><CR>
+    nmap sg :cs find g =expand("")<CR><CR>
+    nmap sc :cs find c =expand("")<CR><CR>
+    nmap st :cs find t =expand("")<CR><CR>
+    nmap se :cs find e =expand("")<CR><CR>
+    nmap sf :cs find f =expand("")<CR><CR>
+    nmap si :cs find i ^=expand("")$<CR><CR>
+    nmap sd :cs find d =expand("")<CR><CR>
+endi
