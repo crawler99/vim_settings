@@ -28,3 +28,6 @@ let g:ctrlp_root_markers=['tags']
 nmap bn :bnext<CR>
 nmap bp :bprevious<CR>
 nmap bf :bfirst<CR>
+
+" Disable mouse selection
+set mouse=""
