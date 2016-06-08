@@ -40,12 +40,12 @@ if has("cscope")
     "    cs add cscope.out
     "endif
     set csverb
-    nmap ss :cs find s =expand("")<CR><CR>
-    nmap sg :cs find g =expand("")<CR><CR>
-    nmap sc :cs find c =expand("")<CR><CR>
-    nmap st :cs find t =expand("")<CR><CR>
-    nmap se :cs find e =expand("")<CR><CR>
-    nmap sf :cs find f =expand("")<CR><CR>
-    nmap si :cs find i ^=expand("")$<CR><CR>
-    nmap sd :cs find d =expand("")<CR><CR>
+    nmap ss :cs find s =expand("<cword>")<CR><CR>
+    nmap sg :cs find g =expand("<cword>")<CR><CR>
+    nmap sc :cs find c =expand("<cword>")<CR><CR>
+    nmap st :cs find t =expand("<cword>")<CR><CR>
+    nmap se :cs find e =expand("<cword>")<CR><CR>
+    nmap sf :cs find f =expand("<cfile>")<CR><CR>
+    nmap si :cs find i ^=expand("<cfile>")<CR>$<CR>
+    nmap sd :cs find d =expand("<cword>")<CR><CR>
 endi
