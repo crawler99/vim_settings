@@ -15,8 +15,12 @@ set nospell
 set nois
 
 " Quick move lines
-nmap <C-up> ddkP
-nmap <C-down> ddp
+nnoremap <C-down> :m .+1<CR>==
+nnoremap <C-up> :m .-2<CR>==
+inoremap <C-down> <Esc>:m .+1<CR>==gi
+inoremap <C-up> <Esc>:m .-2<CR>==gi
+vnoremap <C-down> :m '>+1<CR>gv=gv
+vnoremap <C-up> :m '<-2<CR>gv=gv
 
 " NERDTree configuration
 let NERDTreeQuitOnOpen=0
