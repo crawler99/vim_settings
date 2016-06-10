@@ -14,6 +14,10 @@ set nospell
 " Disable incsearch
 set nois
 
+" Quick move lines
+nmap <C-up> ddkP
+nmap <C-down> ddp
+
 " NERDTree configuration
 let NERDTreeQuitOnOpen=0
 let g:nerdtree_tabs_open_on_console_startup=1
