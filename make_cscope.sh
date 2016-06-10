@@ -2,22 +2,22 @@
 
 usage()
 {
-    echo "Usage: $0 <src_path> <project_name>"
+    echo "Usage: $0 <src_path>"
 }
 
-if [ $# -ne 2 ] 
+if [ $# -ne 1 ] 
 then 
     usage
     exit
 fi
 
 SRC_PATH=$1
-CSCOPE_PATH=~/cscope/$2
 
-mkdir -p $CSCOPE_PATH
-cd $CSCOPE_PATH
+# goto source dir
+pushd $SRC_PATH
 
-find $SRC_PATH \
+# create cscope DB
+find . \
     -name "*.h" -o \
     -name "*.hxx" -o \
     -name "*.hpp" -o \
@@ -29,3 +29,6 @@ find $SRC_PATH \
     -name "makefile" > cscope.files
 
 cscope -bkq -i ./cscope.files
+
+# return from source dir
+popd
