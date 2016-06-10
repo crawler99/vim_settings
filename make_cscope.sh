@@ -1,20 +1,12 @@
 #!/bin/sh
 
-usage()
-{
-    echo "Usage: $0 <src_path>"
-}
-
-if [ $# -ne 1 ] 
-then 
-    usage
-    exit
-fi
-
-SRC_PATH=$1
+REACTOR_RELEASE_PATH=`readlink -f $RS_VM_ROOT/release`
 
 # goto source dir
-pushd $SRC_PATH
+pushd $REACTOR_RELEASE_PATH
+
+# delete old DB
+rm cscope*
 
 # create cscope DB
 find . \
@@ -25,6 +17,7 @@ find . \
     -name "*.c" -o \
     -name "*.cxx" -o \
     -name "*.cpp" -o \
+    -name "*.sql" -o \
     -name "Makefile" -o \
     -name "makefile" > cscope.files
 
