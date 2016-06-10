@@ -11,6 +11,9 @@ set nolist
 " Disable the spell checking
 set nospell
 
+" Disable incsearch
+set nois
+
 " NERDTree configuration
 let NERDTreeQuitOnOpen=0
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -19,6 +22,9 @@ nmap <C-h> gT
 
 " Disable particular view options cached in ~/.vimviews/
 set viewoptions-=options
+
+" Prevent h (left move) and l (right move) to cross lines
+set whichwrap-=h,l
 
 " Set the CtrlP working directory to be the one where tags are generated
 let g:ctrlp_working_path_mode='r'
