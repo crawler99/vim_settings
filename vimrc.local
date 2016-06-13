@@ -34,9 +34,9 @@ set viewoptions-=options
 " Prevent h (left move) and l (right move) to cross lines
 set whichwrap-=h,l
 
-" Set the CtrlP working directory to be the one where tags are generated
+" Set the CtrlP working directory to be the one where cscope DB is generated
 let g:ctrlp_working_path_mode='r'
-let g:ctrlp_root_markers=['tags']
+let g:ctrlp_root_markers=['cscope.out']
 
 " Jump between buffers
 nmap bn :bnext<CR>
