@@ -38,6 +38,13 @@ set whichwrap-=h,l
 let g:ctrlp_working_path_mode='r'
 let g:ctrlp_root_markers=['cscope.out']
 
+" Default to open file in a new tab instead of a new buffer
+let g:ctrlp_prompt_mappings=
+    \ {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
 " Jump between buffers
 nmap bn :bnext<CR>
 nmap bp :bprevious<CR>
