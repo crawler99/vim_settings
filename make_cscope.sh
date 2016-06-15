@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REACTOR_RELEASE_PATH=`readlink -f $RS_VM_ROOT/release`
+REACTOR_RELEASE_PATH=`readlink -f $RS_VM_ROOT/release/..`
 
 # goto source dir
 pushd $REACTOR_RELEASE_PATH
