@@ -28,8 +28,9 @@ vnoremap <C-up> :m '<-2<CR>gv=gv
 " NERDTree configuration
 let NERDTreeQuitOnOpen=0
 let g:nerdtree_tabs_open_on_console_startup=1
-nmap <C-l> gt
-nmap <C-h> gT
+
+" Quit current buffer without closing the whole window
+nnoremap <leader>q :bp<cr>:bd #<cr>
 
 " Disable particular view options cached in ~/.vimviews/
 set viewoptions-=options
@@ -44,17 +45,12 @@ let g:ctrlp_root_markers=['cscope.out']
 " Toggle searching by regexp in CtrlP
 let g:ctrlp_regexp=1
 
-" Default in CtrlP to open file in a new tab instead of a new buffer
-let g:ctrlp_prompt_mappings=
-    \ {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
-
 " Jump between buffers
 nmap bn :bnext<CR>
 nmap bp :bprevious<CR>
-nmap bf :bfirst<CR>
+nmap bh :bfirst<CR>
+nmap <S-l> :bnext<CR>
+nmap <S-h> :bprevious<CR>
 
 " Cscope config
 if has("cscope")
