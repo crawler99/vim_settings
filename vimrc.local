@@ -25,6 +25,13 @@ inoremap <C-up> <Esc>:m .-2<CR>==gi
 vnoremap <C-down> :m '>+1<CR>gv=gv
 vnoremap <C-up> :m '<-2<CR>gv=gv
 
+" Jump between buffers
+nmap bn :bnext<CR>
+nmap bp :bprevious<CR>
+nmap bh :bfirst<CR>
+nmap <S-l> :bnext<CR>
+nmap <S-h> :bprevious<CR>
+
 " NERDTree configuration
 let NERDTreeQuitOnOpen=0
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -44,13 +51,6 @@ let g:ctrlp_root_markers=['cscope.out']
 
 " Toggle searching by regexp in CtrlP
 let g:ctrlp_regexp=1
-
-" Jump between buffers
-nmap bn :bnext<CR>
-nmap bp :bprevious<CR>
-nmap bh :bfirst<CR>
-nmap <S-l> :bnext<CR>
-nmap <S-h> :bprevious<CR>
 
 " Cscope config
 if has("cscope")
