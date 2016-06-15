@@ -38,8 +38,8 @@ set whichwrap-=h,l
 let g:ctrlp_working_path_mode='r'
 let g:ctrlp_root_markers=['cscope.out']
 
-" Toggle searching by filename in CtrlP
-let g:ctrlp_by_filename=1
+" Toggle searching by regexp in CtrlP
+let g:ctrlp_regexp=1
 
 " Default in CtrlP to open file in a new tab instead of a new buffer
 let g:ctrlp_prompt_mappings=
