@@ -14,6 +14,9 @@ set nospell
 " Disable incsearch
 set nois
 
+" Disable mouse selection
+set mouse=""
+
 " Quick move lines
 nnoremap <C-down> :m .+1<CR>==
 nnoremap <C-up> :m .-2<CR>==
@@ -52,9 +55,6 @@ let g:ctrlp_prompt_mappings=
 nmap bn :bnext<CR>
 nmap bp :bprevious<CR>
 nmap bf :bfirst<CR>
-
-" Disable mouse selection
-set mouse=""
 
 " Cscope config
 if has("cscope")
