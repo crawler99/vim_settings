@@ -5,6 +5,7 @@ echo "Setting up customized options for spf13-vim ..."
 
 VIM_REPO=$HOME/github/vim_settings
 ln -s $VIM_REPO/vimrc.local $HOME/.vimrc.local
+ln -s $VIM_REPO/vimrc.before.local $HOME/.vimrc.before.local
 
 # Installing user scripts
 USER_BIN_PATH=$HOME/bin
