@@ -1,2 +1,0 @@
-" By overwriting this variable, remove bundle for neocomplete, add bundle for youcompleteme
-let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
