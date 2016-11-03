@@ -1,1 +1,2 @@
+" Resolve the text-ident issue when pasting from outside
 Bundle 'ConradIrwin/vim-bracketed-paste'
