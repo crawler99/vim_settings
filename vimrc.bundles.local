@@ -3,3 +3,4 @@ Bundle 'ConradIrwin/vim-bracketed-paste'
 
 " Install FastFold plugin to avoid irritating warnings reported by neocomplete
 Bundle 'Konfekt/FastFold'
+Bundle 'Konfekt/FoldText'
