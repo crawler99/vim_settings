@@ -3,7 +3,7 @@
 # Make symbolic links under home directory
 echo "Setting up customized options for spf13-vim ..."
 
-VIM_REPO=$HOME/github/vim_settings
+VIM_REPO=$HOME/GitHub/vim_settings
 ln -s $VIM_REPO/vimrc.local $HOME/.vimrc.local
 ln -s $VIM_REPO/vimrc.bundles.local $HOME/.vimrc.bundles.local
 
